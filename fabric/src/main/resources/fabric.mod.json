@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "equipmotion",
+  "version": "${version}",
+  "name": "Equip Motion",
+  "description": "Shaped first-person draw and holster movements when changing held items.",
+  "authors": ["fertc"],
+  "contact": {
+    "homepage": "https://github.com/fertcfertc/equip-motion",
+    "sources": "https://github.com/fertcfertc/equip-motion",
+    "issues": "https://github.com/fertcfertc/equip-motion/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/equipmotion/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.fertcfertc.equipmotion.fabric.EquipMotionFabric"],
+    "modmenu": ["com.fertcfertc.equipmotion.fabric.ModMenuIntegration"]
+  },
+  "mixins": ["equipmotion.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.3",
+    "java": ">=25",
+    "fabric-api": ">=0.160.5",
+    "architectury": ">=22.0.5",
+    "cloth-config": ">=26.3.159"
+  },
+  "suggests": { "modmenu": ">=21.0.0" }
+}

@@ -1,0 +1,40 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/fertcfertc/equip-motion/issues"
+
+[[mods]]
+modId = "equipmotion"
+version = "${version}"
+displayName = "Equip Motion"
+authors = "fertc"
+description = "Shaped first-person draw and holster movements when changing held items."
+iconFile = "assets/equipmotion/icon.png"
+displayURL = "https://github.com/fertcfertc/equip-motion"
+
+[[dependencies.equipmotion]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.3.0.102,26.4)"
+side = "CLIENT"
+
+[[dependencies.equipmotion]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.3,26.4)"
+side = "CLIENT"
+
+[[dependencies.equipmotion]]
+modId = "architectury"
+type = "required"
+versionRange = "[22.0.5,23)"
+side = "CLIENT"
+
+[[dependencies.equipmotion]]
+modId = "cloth_config"
+type = "required"
+versionRange = "[26.3.159,26.4)"
+side = "CLIENT"
+
+[[mixins]]
+config = "equipmotion.mixins.json"
